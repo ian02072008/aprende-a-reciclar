@@ -1,0 +1,137 @@
+<body>
+EcoAprende/
+│
+├── index.html
+├── styles.css
+└── script.js
+</body>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende a reciclar | EcoAprende</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">♻ EcoAprende</div>
+    <nav>
+        <a href="#inicio">inicio</a>
+        <a href="#aprende">Aprende</a>
+        <a href="#juego">Juego</a>
+        <a href="#quiz">Quiz</a>
+    </nav>
+</header>
+
+<section id="inicio" class="hero">
+    <div class="hero-content">
+        <span class="tag">Pequeñas acciones, grandes cambios</span>
+        <h1>El planeta necesita<br>que <span>actúes.</span></h1>
+        <p>
+            Aprende a separar tus residuos, descubre cómo cuidar el planeta
+            y conviértete en parte del cambio.
+        </p>
+        <a href="#juego" class="button">Comenzar a aprender</a>
+    </div>
+    <div class="hero-image">🌎</div>
+</section>
+
+<section class="stats">
+    <div>
+        <h2>3</h2>
+        <p>Clasificaciones educativas</p>
+    </div>
+    <div>
+        <h2>100%</h2>
+        <p>Aprendizaje interactivo</p>
+    </div>
+    <div>
+        <h2>1</h2>
+        <p>Planeta que cuidar</p>
+    </div>
+</section>
+
+<section id="aprende" class="section">
+    <h2>Aprende a separar tus residuos</h2>
+    <p class="subtitle">Conoce algunos tipos de residuos y cómo manejarlos.</p>
+
+    <div class="cards">
+        <article class="card organic">
+            <div class="card-icon">🍎</div>
+            <h3>Orgánicos</h3>
+            <p>Restos de frutas, verduras, cáscaras y residuos de alimentos que pueden aprovecharse mediante compostaje.</p>
+        </article>
+
+        <article class="card recyclable">
+            <div class="card-icon">📦</div>
+            <h3>Reciclables</h3>
+            <p>Materiales como cartón, papel, ciertos plásticos, metales y vidrio, que deben prepararse y separarse según las reglas locales.</p>
+        </article>
+
+        <article class="card special">
+            <div class="card-icon">🔋</div>
+            <h3>Manejo especial</h3>
+            <p>Pilas, electrónicos y otros residuos que requieren centros o programas especiales de recolección.</p>
+        </article>
+    </div>
+</section>
+
+<section id="juego" class="section game-section">
+    <h2>🎮 Juego: ¿Dónde va cada residuo?</h2>
+    <p class="subtitle">Selecciona el contenedor correcto para cada objeto.</p>
+
+    <div class="game-box">
+        <div class="game-score">
+            Puntos: <span id="score">0</span>
+        </div>
+
+        <div id="waste" class="waste-item">🍌</div>
+        <h3 id="question">¿Dónde colocarías este residuo?</h3>
+
+        <div class="bins">
+            <button class="bin" data-type="organico">
+                🟢<br>Orgánico
+            </button>
+            <button class="bin" data-type="reciclable">
+                🔵<br>Reciclable
+            </button>
+            <button class="bin" data-type="especial">
+                🟠<br>Especial
+            </button>
+        </div>
+
+        <p id="feedback" class="feedback"></p>
+        <button id="next" class="button next-button">Siguiente residuo</button>
+    </div>
+</section>
+
+<section id="quiz" class="section">
+    <h2>🧠 Pon a prueba tus conocimientos</h2>
+    <p class="subtitle">Responde y descubre cuánto sabes sobre el reciclaje.</p>
+
+    <div class="quiz-box">
+        <h3 id="quiz-question">Pregunta</h3>
+        <div id="quiz-options"></div>
+        <p id="quiz-feedback"></p>
+        <button id="quiz-next" class="button">Continuar</button>
+        <p id="quiz-progress"></p>
+    </div>
+</section>
+
+<section class="cta">
+    <h2>El cambio empieza contigo.</h2>
+    <p>Aprender, separar y actuar: tres pasos para un futuro más sostenible.</p>
+    <a href="#inicio" class="button">Volver al inicio</a>
+</section>
+
+<footer>
+    <p>© 2026 EcoAprende | Proyecto educativo de desarrollo sostenible.</p>
+    <p>Aprende. Separa. Transforma.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
